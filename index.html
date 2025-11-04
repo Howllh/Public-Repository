@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>職務経歴書</title>
+    <style>
+        /* 見やすいフォントと最大幅を設定 */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            line-height: 1.6;
+            color: #000;
+            padding: 20px;
+            border: 1px solid #eee; /* ページ裏の影 */
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        h1, h2, h3 {
+            color: #000; /* AWSの青に近い色 */
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+	  /* Titleを調整 */
+	  h1{
+		text-align: center;
+            border-bottom: 3px solid #a3a3a3;
+            padding-bottom: 50px;
+	  }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+            width: 25%;
+        }
+        .skill-category {
+            font-weight: bold;
+            color: #555;
+            display: block;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>職務経歴書</h1>
+    <p>連絡先: [＊＊＊＊＊＊] </p>
+    <p>メールアドレス: [＊＊＊＊＊＊] </p>
+    <p>目標職種: クラウドエンジニア (AWS/Azure)</p>
+
+    <h2>職務要約</h2>
+    <p>
+        SIerでの5年間のシステム開発経験を経て、クラウド技術へ転向。特にAWSを深く学び、インフラ構築の自動化（IaC）に注力。Terraform、Python/Boto3を用いたサーバーレスアーキテクチャの設計・構築経験があります。大規模システムの安定運用とコスト最適化に貢献します。
+    </p>
+
+    <h2>保有スキル</h2>
+    <ul>
+        <li><span class="skill-category">クラウド:</span> **AWS (VPC, EC2, S3, RDS, Lambda, EKS)**, Google Cloud (GCP) </li>
+        <li><span class="skill-category">IaC/自動化:</span> **Terraform**, CloudFormation, Ansible, Python (Boto3)</li>
+        <li><span class="skill-category">OS/ミドルウェア:</span> Linux (CentOS/Amazon Linux), Nginx, Docker, Kubernetes</li>
+        <li><span class="skill-category">言語:</span> Python (5年), Bash, Go (学習中)</li>
+        <li><span class="skill-category">資格:</span> AWS 認定ソリューションアーキテクト – アソシエイト (SAA)</li>
+    </ul>
+
+    <h2>職務経験詳細</h2>
+
+    <h3>株式会社〇〇 (20XX年X月 〜 在職中)</h3>
+    <p>**所属**: インフラソリューション事業部 / **役職**: クラウドエンジニア</p>
+    
+    <h4>プロジェクトA: 顧客向けWebサービスのクラウド移行</h4>
+    <table>
+        <tr><th>期間</th><td>20XX年X月 〜 20XX年X月</td></tr>
+        <tr><th>担当フェーズ</th><td>設計、構築、テスト、運用ドキュメント作成</td></tr>
+        <tr><th>技術要素</th><td>**AWS (VPC, EKS, RDS Aurora)**, Terraform, Docker</td></tr>
+        <tr><th>具体的な貢献</th>
+            <td>
+                <ul>
+                    <li>Terraformを用いてVPC、サブネット、セキュリティグループなど基盤インフラをコード化。</li>
+                    <li>EKS（Kubernetes）クラスタを構築し、コンテナ化されたアプリケーションのデプロイを自動化。</li>
+                    <li>月間約10%のインフラコスト削減に貢献。</li>
+                </ul>
+            </td>
+        </tr>
+        <tr><th>習得もの</th><td>ビジネス経験（例）</td></tr>
+    </table>
+
+    <h2>自己PRと学習実績</h2>
+    <ul>
+        <li>**GitHubポートフォリオ**: <a href="[あなたのGitHubリポジトリURL]" target="_blank">https://github.com/YourName/</a> (構築手順やIaCコードを公開中)</li>
+        <li>**技術ブログ**: 週に1回、AWSの新サービスやIaCに関する記事を公開しています。</li>
+        <li>**強み**: 新しい技術に対する学習意欲が高く、インフラストラクチャを常に最新かつセキュアに保つことを重視しています。</li>
+    </ul>
+
+</body>
+</html>
