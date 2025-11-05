@@ -9,13 +9,23 @@
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
             max-width: 900px;
-            margin: 30px auto;
+            margin: 30px auto 80px auto; /* 上下の余白を調整 */
             line-height: 1.6;
             color: #000;
             padding: 20px 60px;
             border: 1px solid #eee; /* ページ裏の影 */
             box-shadow: 0 0 10px rgba(0,0,0,0.05);
-            text-align: justify;
+            text-align: justify; /* 両端揃え */
+        }
+        .over{
+            text-align: right;
+        }
+        .over p {
+            /* pタグの上下のマージンを調整する */
+            margin-top: 100px;
+            margin-bottom: 300px;
+            /* あるいは上下をまとめてリセット */
+            /* margin: 0; */
         }
         .info{
             text-align: right;
@@ -27,15 +37,15 @@
             /* あるいは上下をまとめてリセット */
             /* margin: 0; */
         }
-	  /* Docment 大タイトルを調整 */
-	  h1{
+	    /* Docment 大タイトルを調整 */
+	    h1{
             color: #000; /* タイトル色 */
             /* border-bottom: 2px solid #007bff;*/ /* 分割線を無くす */
             /* padding-bottom: 0px; */ /* 分割線間隔調整 */
             margin-top: 30px; /* タイトル上の間隔調整 */
             margin-bottom: 20px;
 		text-align: center; /* 真ん中揃い */
-	  }
+	    }
         /* 中タイトルを調整 */
         h2 {
             color: #000;
@@ -48,7 +58,7 @@
             color: #000;
             border-bottom: 1px solid #808080;
             padding-bottom: 5px;
-            margin-top: 25px;
+            margin-top: 45px;
         }
         table {
             width: 100%; /* 宽度为父容器的 50% */
@@ -81,6 +91,14 @@
             color: #000;
             display: block;
             margin-top: 20px;
+        }
+        .page-bottom-spacer {
+                /* 使用 height 属性来定义您想要的空白高度 */
+            height: 10px; 
+                /* 确保它不会影响布局，例如清除任何浮动 */
+            clear: both; 
+                 /* 确保它不会被打印 */
+                /* @media print { display: none; } */ 
         }
     </style>
 </head>
@@ -145,23 +163,61 @@
         <tr><th>OS</th><td>Windows 11 Pro</td></tr>
         <tr><th>ソフトウェア、ツール等</th><td>Microsoft Word, Microsoft Excel, バッチなど</td></tr>
     </table> 
+
+    <!-- 分割线 -->
+    <div class="page-bottom-spacer"></div>
+
+    <h3>株式会社テクノプロ・IT (2024年11月 〜 現在 )</h3>
+    <p>事業内容:  ITインフラの運用・保守を中心に、多岐にわたるサービスを提供する</p>
+    <p>従業員数:  2520名</p>
+    <h4>プロジェクト1:</h4>
+    <h4>大手レコード会社のPCリプレースプロジェクト</h4>
+     <table class="standard-table">
+        <tr><th>期間</th><td>2023年07月 〜 2023年09月</td></tr>
+        <tr><th>プロジェクト概要</th><td>大手レコード会社のPCリプレースプロジェクトにおいて、チームリーダーとして参画。手順書およびチェックシートの作成からPCキッティング、オンサイトでの設置・交換作業まで、一連の工程を統括しました。</td></tr>
+        <tr><th>規模</th><td>全16名</td></tr>
+        <tr><th>担当ポジション</th><td>チームリーダー</td></tr>
+        <tr><th>担当フェーズ</th><td>全215台のPCに関する準備・管理・キッティング作業を担当し、人員の調整や進捗管理など、現場運営全体をリードしました。</td></tr>
+        <tr><th>業務内容</th>
+            <td>
+                <ul>
+                    <li>手順書およびチェックシートの作成</li>
+                    <li>215台のPCの準備、キッティング作業および在庫管理</li>
+                    <li>チェックシートを用いた進捗・品質管理</li>
+                    <li>10名体制のチームマネジメント</li>
+                    <li>PCキッティング作業の指示および技術的サポート</li>
+                    <li>作業中の不具合・エラー発生時のエスカレーションおよび問い合わせ対応</li>
+                    <li>作業完了後のログ取得・内容修正</li>
+                    <li>オンサイト作業時のお客様対応および調整</li>
+                    <li>作業完了報告書およびチェックシートの整理・提出</li>
+                </ul>
+            </td>
+        </tr>
+        <tr><th>実績・取り組み</th><td>約2か月間にわたるPCリプレース業務において、チームリーダーとして全工程を統括。限られた期間の中で215台のPC入れ替えを計画通り完遂し、人員手配・進捗管理・品質維持を徹底することで、スムーズかつ正確なリプレース作業を実現しました。</td></tr>
+        <tr><th>OS</th><td>Windows 11 Pro</td></tr>
+        <tr><th>ソフトウェア、ツール等</th><td>Microsoft Word, Microsoft Excel, バッチなど</td></tr>
+    </table> 
 <!-- 資格 -->
     <h2>資格</h2>
          <table class="half-width-table">
         <tr><th>日本語能力試験 1級</th><td>2020年12月 合格</td></tr>
         <tr><th>ITパスポート試験</th><td>2022年11月 合格</td></tr>
-        <tr><th>LPIC レベル1</th><td>2023年06月 合格</td></tr>
+        <tr><th>LPIC レベル 1</th><td>2023年06月 合格</td></tr>
         <tr><th>情報セキュリティーマネジメント試験</th><td>2025年04月 合格</td></tr>
         <tr><th>基本情報技術者試験</th><td>2025年09月 合格</td></tr>
         <tr><th>Microsoft 認定: Azure Fundamentals（AZ-900）</th><td>2025年10月 合格</td></tr>
     </table>
 
-    <h2>自己PRと学習実績</h2>
-    <ul>
-        <li>**GitHubポートフォリオ**: <a href="[あなたのGitHubリポジトリURL]" target="_blank">https://github.com/YourName/</a> (構築手順やIaCコードを公開中)</li>
-        <li>**技術ブログ**: 週に1回、AWSの新サービスやIaCに関する記事を公開しています。</li>
-        <li>**強み**: 新しい技術に対する学習意欲が高く、インフラストラクチャを常に最新かつセキュアに保つことを重視しています。</li>
-    </ul>
+    <h2>自己PR</h2>
+        <p>私の強みは「主体的な改善推進力」と「目標達成に向けた継続的な学習意欲」です。</p>
+        <p>ITインフラ運用・PCキッティング・サーバー構築やセキュリティ管理など、幅広い業務に携わる中で、計画立案から進捗管理、課題解決、品質確保まで一貫して遂行してきました。PCリプレース案件では10名規模のチームリーダーとして、進捗管理、オンサイト作業までを一貫して担い、215台のPC作業を計画通り完遂させました。また、国内大手企業向けインフラ管理業務では、配属半年でリーダーに昇格し、セキュリティ運用・保守体制の構築と改善を主導しました。直近のクラウド運用標準化プロジェクトでは、現場ヒアリングを通じて約30種類の運用手順書を設計・作成し、ドキュメント化率98％を達成。属人化の解消と業務品質の均一化に大きく貢献しました。</p>
+        <p>こうした業務成果は、継続的な学習によって支えられています。私はITへの探求心が強く、実務と並行して計画的に知識習得に励んできました。大学院在学中のITパスポート取得に始まり、キャリアを通じてLPICレベル1、情報セキュリティーマネジメント、基本情報技術者試験、そして直近ではAzure Fundamentalsを取得しています。現在はAWS認定ソリューションアーキテクト アソシエイトの合格に向けて学習中です。</p>
+        <p>貴社におきましても、この主体的な改善推進力と業務に必要な知識を自ら学び続ける高い学習意欲を活かし、最新技術を迅速にキャッチアップしながら、プロジェクトの安定稼働と業務効率化に貢献していきたいと考えております。</p>
+    <div class="over">
+        <p>以上</p>
+    </div>
+<!-- <div class="page-bottom-spacer"></div> -->
+ <!-- 强制占位符 -->
 
 </body>
 </html>
